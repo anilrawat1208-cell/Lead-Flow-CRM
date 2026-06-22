@@ -23,7 +23,7 @@ app.use(
     sameSite: "lax",
   })
 );
-app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(__dirname, ".")));
 
 // In-memory store — replace with Supabase/PlanetScale for persistent prod data
 const leadsStore = {};
@@ -138,7 +138,7 @@ app.delete("/api/leads/:id", requireAuth, (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/index.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 const PORT = process.env.PORT || 3000;
