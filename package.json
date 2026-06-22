@@ -1,0 +1,21 @@
+{
+  "name": "leadflow-crm",
+  "version": "1.0.0",
+  "description": "LeadFlow CRM for Indian small businesses",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "google-auth-library": "^9.6.3",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
